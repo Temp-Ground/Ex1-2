@@ -8,31 +8,13 @@
     <meta name="viewport" content="width=device-width">
     <title>Apply JavaScript example</title>
 
+    <script src="script.js" defer></script>
 
-    <script>
 
-  // 책갈피 : https://developer.mozilla.org/ko/docs/Learn/JavaScript/First_steps/What_is_JavaScript
-  // 책갈피 위치 : 내부 JavaScript는 잘 동작했지만, JavaScript를 외부 파일로 분리하고 싶으면 어떡할까요? 지금 알아보겠습니다.
-
-  // JavaScript goes here
-
-  document.addEventListener('DOMContentLoaded', () => {
-    function createParagraph() {
-      const para = document.createElement('p');
-      para.textContent = 'You clicked the button!';
-      document.body.appendChild(para);
-    }
-
-    const buttons = document.querySelectorAll('button');
-
-    for (const button of buttons) {
-      button.addEventListener('click', createParagraph);
-    }
-  });
-
-    </script>
   </head>
   <body>
+    <button>Click me</button>
+    <button>Click me</button>
     <button>Click me</button>
   </body>
 </html>
